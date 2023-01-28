@@ -1,0 +1,40 @@
+html.dark,
+.dark body,
+.dark footer .dark .material-icons {
+  font-size: 18px;
+  font-family: sans-serif;
+  background: linear-gradient(180deg, rgb(56, 17, 17) 4%, rgb(26, 26, 26) 27%);
+  color: #fff;
+}
+
+.dark a {
+  color: #fff;
+}
+// .theme-switch {
+//     position: absolute;
+//     right: 1%;
+//     top: 7%;
+//     display: flex;
+//     align-items: center;
+// }
+.theme {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+      top: 170px;
+      right: 50px;
+  }
+}
+.material-icons {
+  color: white;
+}
+
+.dark .tui-page-btn {
+  background-color: rgb(132, 132, 132);
+}
+.dark .movie__title {
+  color: #fff;
+}

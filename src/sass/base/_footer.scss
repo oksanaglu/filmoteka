@@ -1,0 +1,243 @@
+.footer {
+    background-color: #F7F7F7;
+    padding-bottom: 0;
+}
+
+.footer__image {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.footer__container {
+    padding-left: 71px;
+    padding-right: 71px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #545454;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        width: 1024px;
+        padding-left: 71px;
+        padding-right: 71px;
+    }
+}
+
+
+.dark .footer {
+   background-color: #151414;
+}
+@media screen and (min-width: 320px) {
+    .copyright {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .developers {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .footer__developer {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer__developer {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .copyright {
+        padding-top: 30px;
+        padding-bottom: 28px;
+    }
+
+    .developers {
+        padding-top: 30px;
+        padding-bottom: 28px;
+    }
+
+}
+
+.students-modal {
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: underline;
+ 
+}
+
+.students-modal:hover {
+    cursor: pointer;
+    color: #ff6b08;
+    text-decoration: underline;
+}
+
+
+
+
+// Кнопка скролу вверх
+
+.btn-on-top {
+    position: fixed;
+    bottom: 16vh;
+    right: 4vw;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 4px solid #ff6b08;
+    // background-color: #ff6b08;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    // color: white;
+    color: #ff6b08;
+    font-weight: 100px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: 30px;
+            height: 30px;
+            bottom: 19vh;
+            right: 4vw;
+            border: 2px solid #ff6b08;
+             
+        }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 35px;
+        height: 35px;
+        border: 3px solid #ff6b08;
+
+    }
+}
+
+.btn-on-top--visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-load-more:hover,
+.btn-on-top:hover {
+    background-color: #f7883f;
+    color: white;
+    transition: all 0.5s;
+}
+
+.material-symbols-outlined {
+    font-size: 34px;
+    font-weight: 900;
+    // color: #ff6b08;
+
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 22px;
+    }
+
+}
+
+.dark .material-symbols-outlined {
+    color: #ff6b08;
+}
+
+.dark .btn-load-more:hover,
+.dark .btn-on-top:hover {
+    background-color: #463930;
+    transition: all 0.5s;
+}
+
+
+
+
+
+// Пульсація серця
+
+.pulse-heart {
+    position: relative;
+    -webkit-animation: heart-beats 3s infinite;
+    animation: heart-beats 3s infinite;
+}
+
+
+@keyframes heart-beats {
+    0% {
+        transform: scale(1);
+    }
+
+    7% {
+        transform: scale(1.2);
+    }
+
+    12% {
+        transform: scale(1.1);
+    }
+
+    20% {
+        transform: scale(1.3);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.99);
+    }
+}
+
+@-webkit-keyframes heart-beats {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    7% {
+        -webkit-transform: scale(1.2);
+    }
+
+    12% {
+        -webkit-transform: scale(1.1);
+    }
+
+    20% {
+        -webkit-transform: scale(1.3);
+    }
+
+    60% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.99);
+    }
+}
